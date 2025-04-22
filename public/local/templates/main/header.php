@@ -238,10 +238,7 @@ $context = \Bitrix\Main\Context::getCurrent();
                         </li>
                     </ul>
                 </nav>
-                <div class="header__user">
-                    <button class="header__burger"><span class="helper-burger"></span></button>
-                    <a href="#" class="btn _js-login">Личный кабинет</a>
-                </div>
+                
                 <?php $APPLICATION->IncludeComponent(
                     "cargonomica:header.lk_button",
                     "",
@@ -252,6 +249,7 @@ $context = \Bitrix\Main\Context::getCurrent();
                         'CACHE_TIME' => 3600 * 24 * 365,
                     ],
                 ); ?>
+
             </div>
         </div>
     </div>
